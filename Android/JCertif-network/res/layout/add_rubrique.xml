@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:gravity="right|center_vertical"
+	    android:orientation="horizontal"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:background="@drawable/action_barre">
+	
+		<LinearLayout		   
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.12"
+	        android:padding="3dp"
+	        android:gravity="center_vertical|left">
+
+			<ImageView
+			    android:id="@+id/retour_page"			    
+			    android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:background="@drawable/return_off"
+				android:contentDescription="@string/app_name" />
+	            
+		</LinearLayout>
+	        
+	    <TextView
+	        android:id="@+id/title_activity"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.68"
+	        android:gravity="center_vertical"
+	        android:text="@string/findplace"
+	        android:textColor="#FFFFFF"
+	        android:textSize="17sp"
+	        android:textStyle="bold" />
+	        
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.2"/>
+	
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:id="@+id/loading_body"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="10dp">
+					    
+		<ProgressBar
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:indeterminateDrawable="@drawable/loading_progress" />
+						            
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/body"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:background="@drawable/bg"
+		android:visibility="gone">
+				
+		<LinearLayout
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:background="@drawable/inside_bg"
+			android:padding="13dp">
+			
+		    <ScrollView
+		        android:layout_width="match_parent"
+			    android:layout_height="wrap_content" >
+			    
+		        <LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					
+		            <LinearLayout
+					    android:id="@+id/add_video"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:visibility="gone">
+				
+					    <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="35dp"
+					        android:orientation="horizontal" 
+					        android:layout_marginTop="20dp">
+					
+					        <TextView
+					            android:layout_width="90dp"
+					            android:layout_height="wrap_content"
+					            android:text="@string/title"
+					            android:textStyle="bold"
+					            android:textSize="15sp"
+					            android:textColor="@color/blue"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:singleLine="true"
+								android:scrollHorizontally="true"
+								android:ellipsize="marquee"
+								android:marqueeRepeatLimit="marquee_forever" />
+					
+					        <EditText
+					            android:id="@+id/title_video"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:background="@drawable/shape_whate"
+					            android:padding="2dp"
+					            android:inputType="text"
+					            android:ems="10" />
+					
+					    </LinearLayout>
+					    
+					    <LinearLayout
+					        android:id="@+id/url_video_zone"
+					        android:layout_width="match_parent"
+					        android:layout_height="35dp"
+					        android:orientation="horizontal" 
+					        android:layout_marginTop="10dp">
+					
+					        <TextView
+					            android:layout_width="90dp"
+					            android:layout_height="wrap_content"
+					            android:ellipsize="marquee"
+					            android:marqueeRepeatLimit="marquee_forever"
+					            android:scrollHorizontally="true"
+					            android:singleLine="true"
+					            android:text="@string/url"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:textColor="@color/blue"
+					            android:textSize="15sp"
+					            android:textStyle="bold" />
+					
+					        <EditText
+					            android:id="@+id/url_video"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:background="@drawable/shape_whate"
+					            android:padding="2dp"
+					            android:inputType="text"
+					            android:ems="10" />
+					
+					    </LinearLayout>
+					    
+					    <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="35dp"
+					        android:orientation="horizontal" 
+					        android:layout_marginTop="10dp">
+					
+					        <TextView
+					            android:layout_width="90dp"
+					            android:layout_height="wrap_content"
+					            android:ellipsize="marquee"
+					            android:marqueeRepeatLimit="marquee_forever"
+					            android:scrollHorizontally="true"
+					            android:singleLine="true"
+					            android:text="@string/url_img"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:textColor="@color/blue"
+					            android:textSize="15sp"
+					            android:textStyle="bold" />
+					
+					        <EditText
+					            android:id="@+id/url_img_video"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:background="@drawable/shape_whate"
+					            android:padding="2dp"
+					            android:inputType="text"
+					            android:ems="10" />
+					
+					    </LinearLayout>
+					    
+					    <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="35dp"
+					        android:orientation="horizontal" 
+					        android:layout_marginTop="10dp">
+					
+					        <TextView
+					            android:layout_width="90dp"
+					            android:layout_height="fill_parent"
+					            android:gravity="center_vertical"
+					            android:ellipsize="marquee"
+					            android:marqueeRepeatLimit="marquee_forever"
+					            android:scrollHorizontally="true"
+					            android:singleLine="true"
+					            android:text="@string/event"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:textColor="@color/blue"
+					            android:textSize="15sp"
+					            android:textStyle="bold" />
+
+					        <Spinner
+					            android:id="@+id/list_evenement"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:background="@drawable/selecteur_taill"
+					            android:paddingRight="25dp"
+					            android:paddingLeft="3dp"/>
+					
+					    </LinearLayout>
+					    
+					 </LinearLayout>
+					
+		            <LinearLayout
+					    android:id="@+id/add_categories"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:orientation="vertical"
+						android:visibility="gone">
+				
+					    <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="35dp"
+					        android:orientation="horizontal" 
+					        android:layout_marginTop="20dp">
+					
+					        <TextView
+					            android:layout_width="80dp"
+					            android:layout_height="wrap_content"
+					            android:text="@string/title"
+					            android:textStyle="bold"
+					            android:textSize="15sp"
+					            android:textColor="@color/blue"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:singleLine="true"
+								android:scrollHorizontally="true"
+								android:ellipsize="marquee"
+								android:marqueeRepeatLimit="marquee_forever" />
+					
+					        <EditText
+					            android:id="@+id/title_category"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:background="@drawable/shape_whate"
+					            android:padding="2dp"
+					            android:inputType="text"
+					            android:ems="10" />
+					
+					    </LinearLayout>
+					    
+					    <LinearLayout
+					        android:layout_width="match_parent"
+					        android:layout_height="35dp"
+					        android:orientation="horizontal" 
+					        android:layout_marginTop="10dp">
+					
+					        <TextView
+					            android:layout_width="80dp"
+					            android:layout_height="wrap_content"
+					            android:ellipsize="marquee"
+					            android:marqueeRepeatLimit="marquee_forever"
+					            android:scrollHorizontally="true"
+					            android:singleLine="true"
+					            android:text="@string/url_img"
+					            android:textAppearance="?android:attr/textAppearanceMedium"
+					            android:textColor="@color/blue"
+					            android:textSize="15sp"
+					            android:textStyle="bold" />
+					
+					        <EditText
+					            android:id="@+id/url_img_category"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:background="@drawable/shape_whate"
+					            android:padding="2dp"
+					            android:inputType="text"
+					            android:ems="10" />
+					
+					    </LinearLayout>
+					    
+					 </LinearLayout>
+
+				<LinearLayout
+				    android:id="@+id/add_news"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone">
+			
+				    <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="35dp"
+				        android:orientation="horizontal" 
+				        android:layout_marginTop="20dp">
+				
+				        <TextView
+				            android:layout_width="80dp"
+				            android:layout_height="wrap_content"
+				            android:text="@string/title"
+				            android:textStyle="bold"
+				            android:textSize="15sp"
+				            android:textColor="@color/blue"
+				            android:textAppearance="?android:attr/textAppearanceMedium"
+				            android:singleLine="true"
+							android:scrollHorizontally="true"
+							android:ellipsize="marquee"
+							android:marqueeRepeatLimit="marquee_forever" />
+				
+				        <EditText
+				            android:id="@+id/title_new"
+				            android:layout_width="fill_parent"
+				            android:layout_height="fill_parent"
+				            android:background="@drawable/shape_whate"
+				            android:padding="2dp"
+				            android:inputType="text"
+				            android:ems="10" />
+				
+				    </LinearLayout>
+				         
+				    <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="35dp"
+				        android:orientation="horizontal"
+				        android:layout_marginTop="5dp" >
+				
+				        <TextView
+				            android:layout_width="80dp"
+				            android:layout_height="wrap_content"
+				            android:paddingRight="5dp"
+				            android:text="@string/url"
+				            android:textAppearance="?android:attr/textAppearanceMedium"
+				            android:textSize="15sp"
+				            android:textColor="@color/blue"
+				            android:textStyle="bold"
+				            android:singleLine="true"
+							android:scrollHorizontally="true"
+							android:ellipsize="marquee"
+							android:marqueeRepeatLimit="marquee_forever" />
+				
+				      	<EditText
+				            android:id="@+id/url_news"
+				            android:layout_width="fill_parent"
+				            android:layout_height="fill_parent"
+				            android:background="@drawable/shape_whate"
+				            android:padding="2dp"
+				            android:inputType="text"
+				            android:ems="10" />
+				
+				     </LinearLayout>
+				     
+				    <LinearLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="35dp"
+				        android:orientation="horizontal"
+				        android:layout_marginTop="5dp" >
+				
+				        <TextView
+				            android:layout_width="80dp"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:marqueeRepeatLimit="marquee_forever"
+				            android:paddingRight="5dp"
+				            android:scrollHorizontally="true"
+				            android:singleLine="true"
+				            android:text="@string/url_img"
+				            android:textAppearance="?android:attr/textAppearanceMedium"
+				            android:textColor="@color/blue"
+				            android:textSize="15sp"
+				            android:textStyle="bold" />
+				
+				      	<EditText
+				            android:id="@+id/url_img_news"
+				            android:layout_width="fill_parent"
+				            android:layout_height="fill_parent"
+				            android:background="@drawable/shape_whate"
+				            android:padding="2dp"
+				            android:inputType="text"
+				            android:ems="10" />
+				
+				     </LinearLayout>
+				         
+				     <LinearLayout
+				         android:layout_width="match_parent"
+				         android:layout_height="wrap_content"
+				         android:minHeight="35dp"
+				         android:orientation="vertical"
+				         android:layout_marginTop="5dp" >
+				
+				         <TextView
+				             android:layout_width="wrap_content"
+				             android:layout_height="wrap_content"
+				             android:paddingRight="5dp"
+				             android:text="@string/decription"
+				             android:textAppearance="?android:attr/textAppearanceMedium"
+				             android:textSize="15sp"
+				             android:textColor="@color/blue"
+				             android:textStyle="bold"
+				             android:paddingBottom="7dp"
+				             android:singleLine="true"
+							 android:scrollHorizontally="true"
+							 android:ellipsize="marquee"
+							 android:marqueeRepeatLimit="marquee_forever" />
+				
+				          <EditText
+				             android:id="@+id/content_news"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:background="@drawable/shape_whate"
+				             android:padding="3dp"
+				             android:ems="10"
+				             android:inputType="textMultiLine" />
+				
+				     </LinearLayout>
+		
+				</LinearLayout>
+	
+		    <LinearLayout
+			    android:id="@+id/add_event"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone">
+				
+			
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal" 
+				             android:layout_marginTop="20dp">
+				
+				             <TextView
+				                 android:layout_width="80dp"
+				                 android:layout_height="wrap_content"
+				                 android:text="@string/title"
+				                 android:textStyle="bold"
+				                 android:textSize="15sp"
+				                 android:textColor="@color/blue"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:singleLine="true"
+								 android:scrollHorizontally="true"
+								 android:ellipsize="marquee"
+								 android:marqueeRepeatLimit="marquee_forever" />
+				
+				             <EditText
+				                 android:id="@+id/title_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="80dp"
+				                 android:layout_height="wrap_content"
+				                 android:paddingRight="5dp"
+				                 android:text="@string/url"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textSize="15sp"
+				                 android:textColor="@color/blue"
+				                 android:textStyle="bold"
+				                 android:singleLine="true"
+								 android:scrollHorizontally="true"
+								 android:ellipsize="marquee"
+								 android:marqueeRepeatLimit="marquee_forever" />
+				
+				             <EditText
+				                 android:id="@+id/url_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="80dp"
+				                 android:layout_height="wrap_content"
+				                 android:ellipsize="marquee"
+				                 android:marqueeRepeatLimit="marquee_forever"
+				                 android:paddingRight="5dp"
+				                 android:scrollHorizontally="true"
+				                 android:singleLine="true"
+				                 android:text="@string/url_img"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textColor="@color/blue"
+				                 android:textSize="15sp"
+				                 android:textStyle="bold" />
+				
+				             <EditText
+				                 android:id="@+id/url_img_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="80dp"
+				                 android:layout_height="wrap_content"
+				                 android:ellipsize="marquee"
+				                 android:marqueeRepeatLimit="marquee_forever"
+				                 android:paddingRight="5dp"
+				                 android:scrollHorizontally="true"
+				                 android:singleLine="true"
+				                 android:text="@string/ville"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textColor="@color/blue"
+				                 android:textSize="15sp"
+				                 android:textStyle="bold" />
+				
+				             <EditText
+				                 android:id="@+id/ville_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="80dp"
+				                 android:layout_height="wrap_content"
+				                 android:ellipsize="marquee"
+				                 android:marqueeRepeatLimit="marquee_forever"
+				                 android:paddingRight="5dp"
+				                 android:scrollHorizontally="true"
+				                 android:singleLine="true"
+				                 android:text="@string/payes"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textColor="@color/blue"
+				                 android:textSize="15sp"
+				                 android:textStyle="bold" />
+				
+				             <EditText
+				                 android:id="@+id/payes_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="110dp"
+				                 android:layout_height="wrap_content"
+				                 android:ellipsize="marquee"
+				                 android:marqueeRepeatLimit="marquee_forever"
+				                 android:paddingRight="5dp"
+				                 android:scrollHorizontally="true"
+				                 android:singleLine="true"
+				                 android:text="@string/date_start"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textColor="@color/blue"
+				                 android:textSize="15sp"
+				                 android:textStyle="bold" />
+				
+				             <EditText
+				                 android:id="@+id/date_debut_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="35dp"
+				             android:orientation="horizontal"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="110dp"
+				                 android:layout_height="wrap_content"
+				                 android:ellipsize="marquee"
+				                 android:marqueeRepeatLimit="marquee_forever"
+				                 android:paddingRight="5dp"
+				                 android:scrollHorizontally="true"
+				                 android:singleLine="true"
+				                 android:text="@string/date_fin_txt"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textColor="@color/blue"
+				                 android:textSize="15sp"
+				                 android:textStyle="bold" />
+				
+				             <EditText
+				                 android:id="@+id/date_fin_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="fill_parent"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="2dp"
+				                 android:inputType="text"
+				                 android:ems="10" />
+				
+				         </LinearLayout>
+				         
+				         <LinearLayout
+				             android:layout_width="match_parent"
+				             android:layout_height="wrap_content"
+				             android:minHeight="35dp"
+				             android:orientation="vertical"
+				             android:layout_marginTop="5dp" >
+				
+				             <TextView
+				                 android:layout_width="wrap_content"
+				                 android:layout_height="wrap_content"
+				                 android:paddingRight="5dp"
+				                 android:text="@string/decription"
+				                 android:textAppearance="?android:attr/textAppearanceMedium"
+				                 android:textSize="15sp"
+				                 android:textColor="@color/blue"
+				                 android:textStyle="bold"
+				                 android:paddingBottom="7dp"
+				                 android:singleLine="true"
+								 android:scrollHorizontally="true"
+								 android:ellipsize="marquee"
+								 android:marqueeRepeatLimit="marquee_forever" />
+				
+				             <EditText
+				                 android:id="@+id/content_event"
+				                 android:layout_width="fill_parent"
+				                 android:layout_height="wrap_content"
+				                 android:background="@drawable/shape_whate"
+				                 android:padding="3dp"
+				                 android:ems="10"
+				                 android:inputType="textMultiLine" />
+				
+				        </LinearLayout>	
+				    
+							            
+			</LinearLayout>
+			
+		    
+		    
+		    
+		    <LinearLayout
+		              android:layout_width="match_parent"
+				      android:layout_height="wrap_content"
+					  android:paddingTop="5dp"
+					  android:paddingBottom="5dp"
+					  android:orientation="vertical">
+		         
+			          <LinearLayout
+			              android:layout_width="match_parent"
+					      android:layout_height="wrap_content"
+						  android:paddingTop="5dp"
+						  android:paddingBottom="5dp"
+						  android:orientation="horizontal">
+				                
+					      <RelativeLayout
+					          android:layout_width="70dp"
+							  android:layout_height="72dp">
+									
+							  <RelativeLayout
+							      android:layout_width="fill_parent"
+								  android:layout_height="fill_parent"
+								  android:gravity="center"
+								  android:paddingTop="5dp">
+					            
+					              <RelativeLayout
+					                  android:id="@+id/img_profil_edit"
+									  android:layout_width="fill_parent"
+									  android:layout_height="fill_parent"
+									  android:gravity="center"
+									  android:background="@drawable/puce_toque"/>
+										
+							  </RelativeLayout>
+									
+							  <RelativeLayout
+									android:layout_width="fill_parent"
+									android:layout_height="fill_parent"
+									android:gravity="center"
+									android:background="@drawable/cachephoto_04"/>
+							
+						  </RelativeLayout>
+								
+					      <RelativeLayout
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:paddingLeft="5dp"
+								android:gravity="center_vertical">
+							        
+					            <LinearLayout
+							        android:layout_width="match_parent"
+							        android:layout_height="wrap_content"
+									android:orientation="vertical">
+			
+						            <TextView
+						               android:id="@+id/auteur"
+						               android:layout_width="wrap_content"
+					                   android:layout_height="wrap_content"
+					                   android:textStyle="bold"
+					                   android:textColor="@color/blue"
+					                   android:textSize="15sp"
+					                   android:textAppearance="?android:attr/textAppearanceMedium"
+					                   android:singleLine="true"
+									   android:scrollHorizontally="true"
+									   android:ellipsize="marquee"
+									   android:marqueeRepeatLimit="marquee_forever"  />
+						               
+						            <TextView
+						               android:id="@+id/date"
+						               android:layout_width="wrap_content"
+					                   android:layout_height="wrap_content"
+					                   android:textColor="@color/blue"
+					                   android:textSize="14sp"
+					                   android:textAppearance="?android:attr/textAppearanceMedium" 
+					                   android:singleLine="true"
+									   android:scrollHorizontally="true"
+									   android:ellipsize="marquee"
+									   android:marqueeRepeatLimit="marquee_forever" />
+						                
+						        </LinearLayout>
+							        
+					        </RelativeLayout>
+					            
+					   </LinearLayout>
+		
+			          <LinearLayout
+			              android:layout_width="match_parent"
+			              android:layout_height="wrap_content" 
+			              android:gravity="center"
+			              android:layout_marginTop="10dp">
+			
+			              <TextView
+			                  android:id="@+id/add"
+			                  android:layout_width="100dp"
+			                  android:layout_height="40dp"
+			                  android:background="@drawable/shape_whate"
+			                  android:gravity="center"
+			                  android:text="@string/add"
+			                  android:textAppearance="?android:attr/textAppearanceMedium"
+			                  android:textColor="@color/blue"
+			                  android:textStyle="bold" />
+			
+			              <TextView
+			                  android:id="@+id/annuler"
+			                  android:layout_width="100dp"
+			                  android:layout_height="40dp"
+			                  android:layout_marginLeft="10dp"
+			                  android:background="@drawable/shape_whate"
+			                  android:gravity="center"
+			                  android:text="@string/cancel"
+			                  android:textAppearance="?android:attr/textAppearanceMedium"
+			                  android:textColor="@color/blue"
+			                  android:textStyle="bold" />
+			
+			          </LinearLayout>
+			          
+			       </LinearLayout>
+			       
+		    </LinearLayout>
+		    
+		</ScrollView>
+		
+		    </LinearLayout>
+		    
+		</LinearLayout>
+ 
+</LinearLayout>

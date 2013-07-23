@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="3dp"
+    android:layout_margin="3dp"
+    android:background="@drawable/bg">
+    
+    <LinearLayout 
+        android:id="@+id/admin"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="35dp"
+	            android:layout_height="35dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/admin" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/management_admin"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/news"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="35dp"
+	            android:layout_height="35dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/news" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/add_news"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/events"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="37dp"
+	            android:layout_height="37dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/events" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/add_event"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/categories"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/categories" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/add_category"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/photos"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="37dp"
+	            android:layout_height="37dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/photos" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/add_photo"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/videos"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="37dp"
+	            android:layout_height="37dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/videos" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/add_video"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/exit"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/delete"
+	            android:contentDescription="@string/app_name" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/leave"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+
+</LinearLayout>

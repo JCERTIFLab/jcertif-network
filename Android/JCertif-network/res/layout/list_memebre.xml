@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/loading_body"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/inside_bg"
+	    android:orientation="vertical" 
+	    android:padding="13dp"
+        android:gravity="center"
+        android:visibility="gone">
+        
+        <ProgressBar
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:indeterminateDrawable="@drawable/loading" />
+        
+     </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/liste_membre"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@drawable/inside_bg"
+	    android:padding="13dp">
+	        
+            <LinearLayout
+                android:id="@+id/liste"
+				android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical">
+	        
+            	<LinearLayout
+            	    android:layout_width="fill_parent"
+					android:layout_height="30dp"
+					android:orientation="horizontal"
+					android:layout_marginLeft="15dp"
+					android:layout_marginRight="15dp"
+					android:layout_marginTop="2dp"
+					android:layout_marginBottom="2dp"
+	                android:background="@drawable/bg_search">
+	                
+	                <EditText
+	                    android:id="@+id/search_txt"
+	                    android:layout_width="0dp"
+	                    android:layout_height="fill_parent"
+	                    android:layout_weight="0.85"
+	                    android:inputType="text"
+	                    android:ems="10"
+	                    android:layout_marginLeft="25dp"
+	                    android:background="@null" />
+	                    
+	                <LinearLayout
+	                    android:id="@+id/remouve"
+						android:layout_width="0dp"
+						android:layout_height="fill_parent"
+						android:layout_weight="0.15"
+						android:orientation="horizontal"
+						android:gravity="right|center_vertical"
+						android:layout_marginRight="5dp">
+
+		                <ImageView
+		                    android:layout_width="20dp"
+		                    android:layout_height="20dp"
+		                    android:src="@drawable/croix"
+		                    android:contentDescription="@string/app_name" />
+		                    
+	                 </LinearLayout>
+					    
+	          	</LinearLayout>
+	    
+				<ListView
+				    android:id="@+id/list"	       
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:cacheColorHint="@null"
+					android:divider="@android:color/transparent"
+					android:drawSelectorOnTop="false"
+			  		android:dividerHeight="1.0sp"
+			  		android:layout_marginTop="3dp" />
+				
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/discution"
+				android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:visibility="gone">
+				
+		        <LinearLayout
+					android:layout_width="match_parent"
+				    android:layout_height="55dp"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical">
+					
+		            <ImageView
+		                android:id="@+id/retour_liste"
+		                android:layout_width="30dp"
+		                android:layout_height="30dp"
+		                android:background="@drawable/return_off"
+		                android:contentDescription="@string/app_name" />
+		            
+		            <ImageView
+		                android:id="@+id/refresh"
+		                android:layout_width="30dp"
+		                android:layout_height="30dp"
+		                android:src="@drawable/refresh"
+		                android:contentDescription="@string/app_name" 
+		                android:layout_marginLeft="10dp"/>
+		            
+		            <TextView
+		                android:id="@+id/membre_name"
+		                android:layout_width="150dp"
+		                android:layout_height="fill_parent"
+		                android:gravity="center"
+		                android:textStyle="bold"
+		                android:textColor="@color/blue"
+		                android:singleLine="true"
+						android:scrollHorizontally="true"
+						android:ellipsize="marquee"
+						android:marqueeRepeatLimit="marquee_forever"/>
+		            
+		            <LinearLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:orientation="horizontal"
+				        android:gravity="center_vertical|right">
+			            
+			            <RelativeLayout
+							android:layout_width="50dp"
+							android:layout_height="52dp">
+							
+					        <RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:gravity="center"
+								android:paddingTop="3dp">
+								
+					            <RelativeLayout
+						            android:id="@+id/img_profil"
+									android:layout_width="fill_parent"
+									android:layout_height="fill_parent"
+									android:gravity="center"
+									android:background="@drawable/puce_toque"/>
+								
+							</RelativeLayout>
+							
+					        <RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:gravity="center"
+								android:background="@drawable/cachephoto_04"/>
+					
+						</RelativeLayout>
+			            
+			        </LinearLayout>
+					
+		        </LinearLayout>
+		
+		        <ListView
+		            android:id="@+id/listMessages"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_marginTop="3dp"
+		            android:layout_marginBottom="3dp"
+		            android:cacheColorHint="@null"
+					android:divider="@android:color/transparent"
+					android:dividerHeight="5.0sp"/>
+
+			</LinearLayout>
+	
+	</LinearLayout>
+
+</LinearLayout>

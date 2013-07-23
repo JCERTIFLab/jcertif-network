@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout 
+    xmlns:android='http://schemas.android.com/apk/res/android'
+    android:layout_width='fill_parent'
+    android:layout_height='fill_parent'
+    android:orientation='vertical'
+    android:padding='10sp' >
+    
+    <LinearLayout 
+	    android:layout_width='fill_parent'
+	    android:layout_height='wrap_content'
+	    android:orientation='horizontal' >
+	    
+	    <RelativeLayout
+	        android:layout_width="70dp"
+			android:layout_height="72dp">
+						
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:paddingTop="5dp">
+				
+				<RelativeLayout
+				    android:id="@+id/img_profil"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:gravity="center"
+					android:background="@drawable/puce_toque"/>
+			
+			</RelativeLayout>
+			
+			<RelativeLayout
+			    android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:background="@drawable/cachephoto_04"/>
+				
+		</RelativeLayout>
+
+	    <EditText
+	        android:id="@+id/commentaire"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine"
+	        android:layout_marginLeft="5dp" />
+	    
+	</LinearLayout>
+
+</LinearLayout>

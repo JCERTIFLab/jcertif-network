@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+	    android:id="@+id/loading_body"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="10dp">
+					    
+		<ProgressBar
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:indeterminateDrawable="@drawable/loading_progress" />
+						            
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/news_all_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_margin="2dp"
+	    android:background="@drawable/inside_bg"
+	    android:orientation="vertical"
+	    android:paddingTop="13dp"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="15dp"
+	    android:paddingBottom="13dp"
+	    android:visibility="gone">
+		
+		<ListView
+		    android:id="@+id/list"	       
+			android:layout_width="fill_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.85"
+			android:cacheColorHint="@null"
+			android:divider="@android:color/transparent"
+			android:drawSelectorOnTop="false"
+	  		android:dividerHeight="1.0sp"/>
+		
+		<LinearLayout
+		    android:id="@+id/add"
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="0.15"
+			android:gravity="center"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp">
+			
+			<LinearLayout
+			    android:id="@+id/add_subject"
+				android:layout_width="wrap_content"
+				android:layout_height="40dp" 
+				android:gravity="center"
+				android:background="@drawable/shape_whate"
+				android:paddingLeft="10dp">
+		
+				<LinearLayout
+				    android:layout_width="25dp"
+				    android:layout_height="25dp"
+				    android:orientation="vertical" 
+				    android:background="@drawable/add"/>
+				            
+				    <TextView	
+				        android:id="@+id/txt_add_subject"		                
+				        android:layout_width="wrap_content"
+				        android:layout_height="25dp"
+				        android:gravity="center_vertical"
+				        android:text="@string/add_subject"
+				        android:textAppearance="?android:attr/textAppearanceMedium"
+				        android:textColor="@color/blue"
+				        android:paddingLeft="5dp"
+				        android:paddingRight="10dp"
+				        android:textSize="14sp"
+				        android:textStyle="bold" />
+				            
+				 </LinearLayout>
+				        
+		  </LinearLayout>
+	        
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/detail_news"	 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/inside_bg"
+	    android:orientation="vertical" 
+	    android:padding="13dp"
+	    android:visibility="gone">
+        
+        <ListView
+            android:id="@+id/list_comment"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:cacheColorHint="@null"
+			android:divider="@android:color/transparent"
+			android:drawSelectorOnTop="false"
+	  		android:dividerHeight="1.0sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/ajouter_sujet"	 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/bg"
+	    android:orientation="vertical" 
+	    android:visibility="gone">
+        
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@drawable/inside_bg"		    
+	    	android:padding="13dp"
+		    android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:orientation="horizontal" >
+	
+	            <TextView
+	                android:layout_width="80dp"
+	                android:layout_height="fill_parent"
+	                android:text="@string/title"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/blue"
+					android:textSize="15sp"
+					android:textStyle="bold"
+					android:gravity="center_vertical" />
+	
+	            <EditText
+	                android:id="@+id/titre"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	              	android:ems="10"
+					android:textSize="15sp"
+					android:textColor="@color/blue"
+					android:inputType="text"
+					android:padding="3dp"
+					android:background="@drawable/shape_whate" />
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:layout_marginTop="10dp" >
+	
+	            <TextView
+	                android:layout_width="80dp"
+	                android:layout_height="30dp"
+	                android:gravity="center_vertical"
+	                android:text="@string/contenu"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/blue"
+	                android:textSize="15sp"
+	                android:textStyle="bold" />
+	
+	            <EditText
+	                android:id="@+id/contenu"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	              	android:ems="10"
+					android:textSize="15sp"
+					android:textColor="@color/blue"
+					android:inputType="text"
+					android:padding="3dp"
+					android:background="@drawable/shape_whate" />
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="match_parent"
+			    android:layout_height="wrap_content" 
+			    android:gravity="center"
+			    android:paddingTop="15dp">
+	            
+	            <TextView
+	                android:id="@+id/ajouter"
+			        android:layout_width="110dp"
+			        android:layout_height="40dp"
+			        android:background="@drawable/shape_whate"
+			       	android:gravity="center"
+			        android:text="@string/add"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:textColor="@color/blue"
+			        android:textStyle="bold" />
+	            
+	            <TextView
+	                android:id="@+id/annuler"
+			        android:layout_width="110dp"
+			        android:layout_height="40dp"
+			        android:layout_marginLeft="10dp"
+			        android:background="@drawable/shape_whate"
+			        android:gravity="center"
+			        android:text="@string/cancel"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:textColor="@color/blue"
+			        android:textStyle="bold" />
+			
+			</LinearLayout>
+			
+	    </LinearLayout>
+        
+    </LinearLayout>
+	    
+</LinearLayout>

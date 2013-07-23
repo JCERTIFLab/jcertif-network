@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="3dp"
+    android:layout_margin="3dp">
+    
+    <LinearLayout 
+        android:id="@+id/resolut"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+        		android:id="@+id/resolut_img"
+	            android:layout_width="37dp"
+	            android:layout_height="37dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/send_off" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_resolut"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/set_resolut"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/del"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="37dp"
+	            android:layout_height="37dp"
+	            android:contentDescription="@string/app_name"
+	            android:src="@drawable/delete_file" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_del"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/del_article"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/exit"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal">
+	    
+        <LinearLayout 
+		    android:layout_width="50dp"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal"
+		    android:gravity="center">
+
+	        <ImageView
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:src="@drawable/delete"
+	            android:contentDescription="@string/app_name" />
+	        
+	    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/leave"
+            android:textColor="@color/blue"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+	    
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2013-01-09T11:30:11.876147Z"
+   url="http://svnmanager.dotit-labs.com/svn/footCan2013/trunk/Android/SlidingMenuActivity/src/com/slidingmenu/lib"
+   last-author="rami"
+   kind="dir"
+   uuid="427a45c0-7701-491c-8d1e-ab1b464d91c0"
+   repos="http://svnmanager.dotit-labs.com/svn/footCan2013"
+   revision="230"/>
+<entry
+   committed-rev="2"
+   name="CustomViewBehind.java"
+   text-time="2013-01-25T08:35:31.894606Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="cdb1edd8ce67ca90ba935595d1c8fb77"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.685594Z"/>
+<entry
+   name="app"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="CustomViewAbove.java"
+   text-time="2013-01-25T08:35:31.899606Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="b9b9f70d3e8b294792d41f0479aaa625"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.873605Z"/>
+<entry
+   committed-rev="2"
+   name="CanvasTransformerBuilder.java"
+   text-time="2013-01-25T08:35:31.905607Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="9152026ab43bba41ebf1e97d610efd3b"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.878605Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingMenu.java"
+   text-time="2013-01-25T08:35:31.910607Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="d41766e3a5a5f1d9ade0699e8f03a051"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.888606Z"/>
+</wc-entries>

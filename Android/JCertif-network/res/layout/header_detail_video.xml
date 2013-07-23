@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+		    
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+		android:layout_height="35dp"
+		android:orientation="horizontal">
+		        
+	    <LinearLayout
+	        android:id="@+id/info"
+			android:layout_width="0dp"
+			android:layout_height="fill_parent"
+			android:layout_weight="0.15"
+			android:orientation="horizontal"
+			android:gravity="center_horizontal"
+			android:padding="2dp">
+			
+			<ImageView  
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/info"
+	            android:contentDescription="@string/app_name" />
+			        
+	     </LinearLayout>
+	     
+	     <TextView
+	         android:id="@+id/title_new"
+		     android:layout_width="0dp"
+		     android:layout_height="fill_parent"
+		     android:layout_weight="0.7"
+		     android:textStyle="bold"
+		     android:gravity="center"
+		     android:textAppearance="?android:attr/textAppearanceLarge"
+		     android:singleLine="true"
+			 android:scrollHorizontally="true"
+			 android:ellipsize="marquee"
+			 android:textColor="@color/blue"
+			 android:marqueeRepeatLimit="marquee_forever" />
+		        
+		     <TextView 
+		         android:layout_width="0dp"
+			     android:layout_height="fill_parent"
+			     android:layout_weight="0.15"
+			     android:orientation="horizontal"/>
+		        
+	</LinearLayout>
+				
+	<LinearLayout 
+		        android:layout_width="fill_parent"
+		        android:layout_height="200dp"
+		        android:padding="3dp"
+		        android:background="@drawable/menu_share"
+		        android:orientation="horizontal"
+		        android:gravity="center">
+		        
+	             <VideoView 
+			        android:id="@+id/video"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:cacheColorHint="@null"/>
+	            
+		        
+	        </LinearLayout>
+	        
+	        <LinearLayout
+			            android:layout_width="match_parent"
+					    android:layout_height="wrap_content" 
+					    android:gravity="center"
+					    android:padding="3dp">
+			            
+			            <LinearLayout
+			                android:id="@+id/add_comment"
+				            android:layout_width="wrap_content"
+						    android:layout_height="wrap_content" 
+						    android:gravity="center"
+						    android:background="@drawable/shape_whate"
+						    android:padding="5dp">
+		
+				            <LinearLayout
+				                android:layout_width="30dp"
+				                android:layout_height="30dp"
+				                android:orientation="vertical" 
+				                android:background="@drawable/add"/>
+				            
+				            <TextView	
+				                android:id="@+id/txt_add_comment"		                
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:text="@string/add_comments"
+				                android:textAppearance="?android:attr/textAppearanceMedium"
+				                android:textColor="@color/blue"
+				                android:paddingLeft="5dp"
+				                android:textSize="14sp"
+				                android:textStyle="bold" />
+				            
+				        </LinearLayout>
+				        
+		        </LinearLayout>  
+	 
+		</LinearLayout>

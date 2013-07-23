@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_cellule_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+	<RelativeLayout
+	    android:id="@+id/img_profil"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:gravity="center"
+		android:background="@drawable/puce_toque"/>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:paddingLeft="5dp" >
+    
+		<LinearLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="0.85"
+		    android:gravity="center_vertical"
+		    android:orientation="vertical">
+		    
+			<TextView
+			    android:id="@+id/name"
+			    style="HelveticaNeue-Bold"
+			    android:layout_width="fill_parent"
+			    android:layout_height="30dp"
+			    android:gravity="center_vertical"
+			    android:textColor="@color/blue"
+			    android:textSize="15sp"
+			    android:textStyle="bold" />
+			
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="30dp"
+			    android:gravity="center_vertical"
+			    android:orientation="horizontal"
+			    android:paddingBottom="5dp">
+		    
+			    <TextView
+			        android:id="@+id/last_msg"
+			        style="HelveticaNeue"
+			        android:layout_width="0dp"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="0.68"
+			        android:gravity="bottom"
+			        android:textColor="@color/blue"
+			        android:textSize="14sp"
+			        android:textStyle="italic" 
+			        android:layout_marginTop="2dp"
+			        android:paddingRight="20dp"
+			        android:singleLine="true"/>	
+			        
+			    <TextView
+			        android:id="@+id/date"
+			        style="HelveticaNeue"
+			        android:layout_width="0dp"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="0.32"
+			        android:gravity="bottom|right"
+			        android:textColor="@color/blue"
+			        android:textSize="12sp" />
+			    			    
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="0.15"
+		    android:gravity="right"
+		    android:orientation="vertical"
+		    android:padding="1.5dp">
+
+			<ImageView
+			    android:id="@+id/statut"
+			    android:layout_width="25dp"
+			    android:layout_height="25dp"
+			    android:src="@drawable/login"
+			    android:contentDescription="@string/app_name" />
+		    
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</LinearLayout>

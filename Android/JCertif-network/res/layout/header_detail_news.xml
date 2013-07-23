@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/title_news"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:textColor="@color/blue"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:singleLine="true"
+		android:scrollHorizontally="true"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever" />
+		
+		<WebView 
+		    android:id="@+id/content"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" />
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:paddingBottom="5dp"
+			android:orientation="horizontal">
+	                
+		    <RelativeLayout
+		        android:layout_width="70dp"
+				android:layout_height="72dp">
+						
+				<RelativeLayout
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:gravity="center"
+							android:paddingTop="5dp">
+							
+				            <RelativeLayout
+					            android:id="@+id/img_profil"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:gravity="center"
+								android:background="@drawable/puce_toque"/>
+							
+						</RelativeLayout>
+						
+				        <RelativeLayout
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:gravity="center"
+							android:background="@drawable/cachephoto_04"/>
+				
+					</RelativeLayout>
+					
+		            <RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:paddingLeft="5dp"
+						android:gravity="center_vertical">
+				        
+		                <LinearLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+							android:orientation="vertical">
+
+			                <TextView
+			                    android:id="@+id/auteur"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:textStyle="bold"
+			                    android:textColor="@color/blue"
+			                    android:textSize="15sp"
+			                    android:textAppearance="?android:attr/textAppearanceMedium"
+			                    android:singleLine="true"
+								android:scrollHorizontally="true"
+								android:ellipsize="marquee"
+								android:marqueeRepeatLimit="marquee_forever"  />
+			                
+			                <TextView
+			                    android:id="@+id/date"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:textColor="@color/blue"
+			                    android:textSize="14sp"
+			                    android:textAppearance="?android:attr/textAppearanceMedium" 
+			                    android:singleLine="true"
+								android:scrollHorizontally="true"
+								android:ellipsize="marquee"
+								android:marqueeRepeatLimit="marquee_forever" />
+			                
+			             </LinearLayout>
+				        
+		            </RelativeLayout>
+		            
+		        </LinearLayout>
+
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:gravity="center"
+		            android:padding="5dp">
+
+		            <Button
+		                android:id="@+id/afficher_web"
+		                android:layout_width="25dp"
+		                android:layout_height="25dp"
+		                android:background="@drawable/link" 
+		                android:layout_marginRight="10dp"/>
+		            
+		            <Button
+		                android:id="@+id/mail"
+		                android:layout_width="25dp"
+		                android:layout_height="25dp"		                
+		                android:layout_marginRight="10dp"
+		                android:background="@drawable/mail" />
+		            
+		            <Button
+		                android:id="@+id/share"
+		                android:layout_width="25dp"
+		                android:layout_height="25dp"		                
+		                android:layout_marginRight="10dp"
+		                android:background="@drawable/share" />	            
+
+		        </LinearLayout>		
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content" 
+		            android:gravity="center"
+		            android:padding="5dp">
+		            
+		            <CheckBox 
+				        android:id="@+id/cb_facebook"
+		                android:layout_width="wrap_content"
+		                android:layout_height="27dp"
+		                android:text="(Non connecté)"
+		                android:textColor="@color/blue"
+		                android:textStyle="bold"       
+				        android:button="@drawable/btn_check_facebook"/>		            
+
+		        </LinearLayout>		    
+		        
+		        <LinearLayout
+		            android:layout_width="match_parent"
+				    android:layout_height="wrap_content" 
+				    android:gravity="center"
+				    android:padding="5dp">
+		            
+		            <LinearLayout
+		                android:id="@+id/add_comment"
+			            android:layout_width="wrap_content"
+					    android:layout_height="wrap_content" 
+					    android:gravity="center"
+					    android:background="@drawable/shape_whate"
+					    android:padding="5dp">
+	
+			            <LinearLayout
+			                android:layout_width="30dp"
+			                android:layout_height="30dp"
+			                android:orientation="vertical" 
+			                android:background="@drawable/add"/>
+			            
+			            <TextView	
+			                android:id="@+id/txt_add_comment"		                
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:text="@string/add_comments"
+			                android:textAppearance="?android:attr/textAppearanceMedium"
+			                android:textColor="@color/blue"
+			                android:paddingLeft="5dp"
+			                android:textSize="14sp"
+			                android:textStyle="bold" />
+			            
+			        </LinearLayout>
+
+		        </LinearLayout>
+	                
+</LinearLayout>

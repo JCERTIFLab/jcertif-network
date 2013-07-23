@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:gravity="right|center_vertical"
+	    android:orientation="horizontal"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:background="@drawable/action_barre">
+	
+		<LinearLayout		   
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.12"
+	        android:padding="3dp"
+	        android:gravity="center_vertical|left">
+
+			<ImageView
+			    android:id="@+id/retour_page"			    
+			    android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:background="@drawable/return_off"
+				android:contentDescription="@string/app_name" />
+	            
+		</LinearLayout>
+	        
+	    <TextView
+	        android:id="@+id/title_activity"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="0.68"
+	        android:gravity="center_vertical"
+	        android:text="@string/findplace"
+	        android:textColor="#FFFFFF"
+	        android:textSize="18sp"
+	        android:textStyle="bold" />
+	        
+	    <TextView
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.2"/>
+	
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/body"	 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/inside_bg"
+	    android:orientation="vertical" 
+	    android:padding="13dp">
+        
+        <ViewFlipper
+            android:id="@+id/viewFlipper" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"> 
+	        
+            <LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+				android:orientation="vertical">
+			    
+				<LinearLayout
+				    android:layout_width="fill_parent"
+				    android:layout_height="150dp"
+				    android:orientation="horizontal"
+				    android:gravity="center" >
+				        
+					    
+					<ImageView
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:src="@drawable/radar"
+					    android:contentDescription="@string/app_name" />
+	
+				</LinearLayout>
+				    
+				    <LinearLayout
+				        android:id="@+id/loading_location"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:gravity="center"
+				        android:visibility="gone">
+				
+				        <ProgressBar
+				            android:layout_width="50dp"
+				            android:layout_height="50dp"
+				            android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+				        
+				    </LinearLayout>
+				    
+				    <LinearLayout
+				        android:id="@+id/body1"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:orientation="vertical"
+				        android:gravity="center" >
+				
+				        <TextView
+				            android:id="@+id/title1"
+				            android:layout_width="200dp"
+				            android:layout_height="50dp"
+				            android:layout_marginTop="15dp"
+				            android:background="@drawable/shape_whate"
+				            android:gravity="center"
+				            android:orientation="vertical"
+				            android:text="@string/saveplace"
+				            android:textColor="@color/blue"
+				            android:textSize="18sp"
+				            android:textStyle="bold" />
+				        
+				        <TextView
+				            android:id="@+id/title3"
+				            android:layout_width="200dp"
+				            android:layout_height="50dp"
+				            android:layout_marginTop="15dp"
+				            android:background="@drawable/shape_whate"
+				            android:gravity="center"
+				            android:orientation="vertical"
+				            android:text="@string/view_map"
+				            android:textColor="@color/blue"
+				            android:textSize="18sp"
+				            android:textStyle="bold" 
+				            android:visibility="invisible"/>
+				        
+				    </LinearLayout>
+			
+			</LinearLayout>
+	        
+            <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+	            
+				<RelativeLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:orientation="vertical" >
+				
+				    <com.google.android.maps.MapView
+				        android:id="@+id/mapview"
+				        android:layout_width="fill_parent"
+				        android:layout_height="fill_parent"
+				        android:apiKey="@string/mapKey_debug"
+				        android:clickable="true" />
+				    
+				    <LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="50dp"
+					    android:layout_alignParentLeft="true"
+					    android:orientation="horizontal">
+				        
+				        <LinearLayout
+						    android:layout_width="0dp"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="0.2"
+						    android:orientation="horizontal"
+						    android:paddingLeft="10dp"
+						    android:paddingTop="10dp">
+				
+				            <ImageView
+				                android:id="@+id/roll_back"
+				                android:layout_width="30dp"
+				                android:layout_height="30dp"
+				                android:contentDescription="@string/app_name"
+				                android:background="@drawable/return_off" />
+						    
+				        </LinearLayout>
+				        
+				        <LinearLayout
+				            android:id="@+id/bar_menu"
+						    android:layout_width="0dp"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="0.6"
+						    android:orientation="horizontal"
+						    android:gravity="center"
+						    android:padding="5dp"
+						    android:layout_marginTop="5dp"
+						    android:background="@drawable/shape_whate"
+						    android:visibility="invisible" >
+						    
+				            <ImageView
+				                android:id="@+id/car"
+				                android:layout_width="50dp"
+				                android:layout_height="40dp"
+				                android:contentDescription="@string/app_name"
+				                android:src="@drawable/car" 
+				                android:paddingRight="10dp"/>
+				            
+				            <ImageView
+				                android:id="@+id/walking"
+				                android:layout_width="50dp"
+				                android:layout_height="40dp"
+				                android:contentDescription="@string/app_name"
+				                android:src="@drawable/user_walk"
+				                android:paddingRight="10dp" />
+				            
+				            <ImageView
+				                android:id="@+id/direction"
+				                android:layout_width="40dp"
+				                android:layout_height="40dp"
+				                android:contentDescription="@string/app_name"
+				                android:src="@drawable/web_cam" />
+				                
+				        </LinearLayout>
+				        
+				        <LinearLayout
+						    android:layout_width="0dp"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="0.2"
+						    android:orientation="horizontal"
+						    android:gravity="right"
+						    android:padding="5dp" >
+						    
+				            <ImageView
+					            android:id="@+id/menu"
+					            android:layout_width="30dp"
+					            android:layout_height="30dp"
+					            android:src="@drawable/settings"
+					            android:contentDescription="@string/app_name" />
+						    
+				        </LinearLayout>
+				    
+				    </LinearLayout>
+				
+				    <LinearLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="50dp"
+				        android:layout_alignParentBottom="true"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignParentRight="true">
+				        
+				        <LinearLayout
+					        android:layout_width="0dp"
+					        android:layout_height="fill_parent"
+					        android:layout_weight="0.2"
+					        android:gravity="bottom|right">
+				
+					        <LinearLayout
+					            android:id="@+id/compasse"
+					            android:layout_width="50dp"
+					            android:layout_height="50dp" />
+					        
+					    </LinearLayout>
+					    
+				        <LinearLayout
+					        android:layout_width="0dp"
+						    android:layout_height="fill_parent"
+						    android:layout_weight="0.6"
+						    android:padding="5dp"
+					        android:gravity="center">
+					        
+				            <TextView
+					       	    android:id="@+id/distance"
+						        android:layout_width="wrap_content"
+						        android:layout_height="fill_parent"	        
+						        android:background="@drawable/shape_whate"
+						        android:textColor="@color/blue"
+						        android:textStyle="bold"
+						        android:textSize="18sp"
+						        android:gravity="center"
+						        android:textAppearance="?android:attr/textAppearanceMedium" />        
+				            
+				        </LinearLayout>
+				
+				        <LinearLayout
+				            android:id="@+id/loading"
+					        android:layout_width="0dp"
+					        android:layout_height="fill_parent"
+					        android:layout_weight="0.2"
+					        android:gravity="bottom|right"
+					        android:padding="5dp">
+				            
+				            <ProgressBar
+					            android:layout_width="40dp"
+					            android:layout_height="40dp"
+					            android:indeterminateDrawable="@drawable/my_progress_indeterminate" />
+				            
+				         </LinearLayout>
+				
+				    </LinearLayout>
+				
+				</RelativeLayout>
+				
+			</LinearLayout>	       
+	                
+	     </ViewFlipper>
+
+    </LinearLayout>
+    
+</LinearLayout>

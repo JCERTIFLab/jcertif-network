@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+	    android:id="@+id/loading_body"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="10dp" >
+					    
+		<ProgressBar
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:indeterminateDrawable="@drawable/loading_progress" />
+						            
+	</LinearLayout>
+    
+	<ListView
+	    android:id="@+id/list"	       
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:cacheColorHint="@null"
+		android:divider="@android:color/transparent"
+		android:drawSelectorOnTop="false"
+		android:dividerHeight="1.0sp"
+		android:layout_marginTop="3dp" 
+		android:visibility="gone"/>
+	
+</LinearLayout>

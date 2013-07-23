@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:padding="10dp"
+	android:layout_margin="3dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publier_sur_votre_mure"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_gravity="left"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<EditText
+		android:id="@+id/revieew"
+		android:layout_marginTop="15dp"
+		android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:textColor="@color/blue"
+		android:hint="@string/ecrire_votre_message_ici"/>
+
+</LinearLayout>

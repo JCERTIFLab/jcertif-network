@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2013-01-09T11:30:11.876147Z"
+   url="http://svnmanager.dotit-labs.com/svn/footCan2013/trunk/Android/SlidingMenuActivity/res/values"
+   last-author="rami"
+   kind="dir"
+   uuid="427a45c0-7701-491c-8d1e-ab1b464d91c0"
+   repos="http://svnmanager.dotit-labs.com/svn/footCan2013"
+   revision="230"/>
+<entry
+   committed-rev="2"
+   name="colors.xml"
+   text-time="2013-01-25T08:35:34.648764Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="6b09ab91223cb9ca230fb169811fb20e"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:34.637763Z"/>
+<entry
+   committed-rev="2"
+   name="dimen.xml"
+   text-time="2013-01-25T08:35:34.651764Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="f2d5d1263df6e706a6f384a5097fded8"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:34.639763Z"/>
+<entry
+   committed-rev="2"
+   name="attrs.xml"
+   text-time="2013-01-25T08:35:34.655764Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="4a617e6793ffde5a49162c46a3f4dbe7"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:34.642763Z"/>
+<entry
+   committed-rev="2"
+   name="ids.xml"
+   text-time="2013-01-25T08:35:34.660764Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="bfe69c8be2c94a1faa134aa156328f20"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:34.645763Z"/>
+</wc-entries>

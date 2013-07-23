@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2013-01-09T11:30:11.876147Z"
+   url="http://svnmanager.dotit-labs.com/svn/footCan2013/trunk/Android/SlidingMenuActivity/src/com/slidingmenu/lib/app"
+   last-author="rami"
+   kind="dir"
+   uuid="427a45c0-7701-491c-8d1e-ab1b464d91c0"
+   repos="http://svnmanager.dotit-labs.com/svn/footCan2013"
+   revision="230"/>
+<entry
+   committed-rev="2"
+   name="SlidingActivityBase.java"
+   text-time="2013-01-25T08:35:31.727596Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="1d6009fc54edf76ea1b6b3ff96b6afcd"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.697595Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingListActivity.java"
+   text-time="2013-01-25T08:35:31.732597Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="f3cd1f43d050b2488fa13c40c08cca9d"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.701595Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingMapActivity.java"
+   text-time="2013-01-25T08:35:31.738597Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="d6c6eed457a9e46d0b793f954ef21672"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.705595Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingPreferenceActivity.java"
+   text-time="2013-01-25T08:35:31.744597Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="963465a8f9fde92710d1d98dba0dcb06"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.710596Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingActivity.java"
+   text-time="2013-01-25T08:35:31.748598Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="af44db1d20e12b08e4f3c3a9ec128735"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.714596Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingActivityHelper.java"
+   text-time="2013-01-25T08:35:31.752598Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="246c4e2fd1a57c7cea3998e2bbd9f2ba"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.719596Z"/>
+<entry
+   committed-rev="2"
+   name="SlidingFragmentActivity.java"
+   text-time="2013-01-25T08:35:31.756598Z"
+   committed-date="2013-01-09T11:30:11.876147Z"
+   checksum="1dd8f9d2424a8bcf6c60cd9bf0b108d2"
+   last-author="rami"
+   kind="file"
+   prop-time="2013-01-25T08:35:31.723596Z"/>
+</wc-entries>

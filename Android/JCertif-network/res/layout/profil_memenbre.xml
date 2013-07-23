@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+    
+    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:gravity="right|center_vertical"
+	        android:orientation="horizontal"
+	        android:paddingLeft="5dp"
+	        android:paddingRight="5dp"
+	        android:background="@drawable/action_barre">
+	
+			<LinearLayout
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="0.15"
+	            android:padding="3dp"
+	            android:gravity="center_vertical|left">
+
+				<ImageView
+			    	android:id="@+id/return_img"
+				    android:layout_width="30dp"
+				    android:layout_height="30dp"
+				    android:background="@drawable/return_off"
+				    android:contentDescription="@string/app_name" />
+	            
+			</LinearLayout>
+	        
+	        <TextView
+	            android:id="@+id/title_activity"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="0.65"
+	            android:gravity="center_vertical"
+	            android:text="@string/jcertif_newtork"
+	            android:textColor="#FFFFFF"
+	            android:textSize="20sp"
+	            android:textStyle="bold" />
+	        
+	        <TextView
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.2"/>
+	
+	    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/description"
+		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:padding="13dp"
+	    android:background="@drawable/inside_bg">
+		
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+			
+            <LinearLayout
+				android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical">
+		
+		        <LinearLayout
+					android:layout_width="match_parent"
+				    android:layout_height="130dp"
+				    android:orientation="horizontal">
+		
+			        <LinearLayout
+			            android:layout_width="120dp"
+			            android:layout_height="fill_parent"
+			            android:gravity="center">
+			        
+			            <RelativeLayout
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent">
+							
+					        <RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:gravity="center"
+								android:paddingTop="5dp">
+								
+					            <RelativeLayout
+						            android:id="@+id/img_profil"
+									android:layout_width="fill_parent"
+									android:layout_height="fill_parent"
+									android:gravity="center"
+									android:background="@drawable/puce_toque"/>
+								
+							</RelativeLayout>
+							
+					        <RelativeLayout
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:gravity="center"
+								android:background="@drawable/cachephoto_04"/>
+					
+						</RelativeLayout>
+			            
+			        </LinearLayout>
+			        
+			        <LinearLayout
+			            android:layout_width="fill_parent"
+			            android:layout_height="fill_parent"
+			            android:gravity="center_vertical"
+			            android:orientation="vertical"
+			            android:paddingLeft="7dp" >
+		
+			            <TextView
+			                android:id="@+id/name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textStyle="bold"
+			                android:textColor="@color/blue"
+			                android:textSize="14sp"
+			                android:textAppearance="?android:attr/textAppearanceMedium"
+			                android:layout_marginBottom="4dp"
+			                android:singleLine="true"
+						    android:scrollHorizontally="true"
+						    android:ellipsize="marquee"
+						    android:marqueeRepeatLimit="marquee_forever" />
+			            
+			            <TextView
+			                android:id="@+id/date_naissance"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textColor="@color/blue"
+			                android:textSize="14sp"
+			                android:textAppearance="?android:attr/textAppearanceMedium"
+			                android:layout_marginBottom="4dp"
+			                android:singleLine="true"
+						    android:scrollHorizontally="true"
+						    android:ellipsize="marquee"
+						    android:marqueeRepeatLimit="marquee_forever" />
+			            
+			            <TextView
+			                android:id="@+id/ville"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textColor="@color/blue"
+			                android:textSize="14sp"
+			                android:textAppearance="?android:attr/textAppearanceMedium"
+			                android:layout_marginBottom="4dp"
+			                android:singleLine="true"
+						    android:scrollHorizontally="true"
+						    android:ellipsize="marquee"
+						    android:marqueeRepeatLimit="marquee_forever" />
+			            
+			            <TextView
+			                android:id="@+id/payes"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:textColor="@color/blue"
+			                android:textSize="14sp"
+			                android:textAppearance="?android:attr/textAppearanceMedium" 
+			                android:singleLine="true"
+						    android:scrollHorizontally="true"
+						    android:ellipsize="marquee"
+						    android:marqueeRepeatLimit="marquee_forever"/>
+						
+			        </LinearLayout>
+			        
+			    </LinearLayout>
+			    
+		        <LinearLayout
+					android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:orientation="vertical"
+				    android:paddingTop="7dp">
+
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:text="@string/presentation"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textColor="@color/blue"
+			            android:textSize="14sp"
+		                android:textStyle="bold" />
+
+		            <WebView
+		                android:id="@+id/web"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent" />
+
+		            <LinearLayout
+					                    android:id="@+id/send_email"
+					                    android:layout_width="fill_parent"
+					                    android:layout_height="wrap_content"
+					                    android:text="@string/send_mail"
+					                    android:textStyle="bold"
+					                    android:gravity="center">
+								        
+					                    <ImageView 
+					                        android:src="@drawable/mail"
+					                        android:layout_width="wrap_content"
+						                    android:layout_height="wrap_content"
+						                    android:contentDescription="@string/app_name"/>
+								        
+					                    <TextView
+					                        android:id="@+id/mail_txt"
+						                    android:layout_width="wrap_content"
+						                    android:layout_height="wrap_content"
+						                    android:text="@string/send_mail"
+						                    android:textStyle="bold"
+						                    android:textColor="@color/blue"
+						                    android:textSize="13sp" />
+								        
+					                </LinearLayout>
+			        
+		        </LinearLayout>
+		        
+		 	</LinearLayout>
+		 	
+      	</ScrollView>
+            
+	</LinearLayout>
+
+</LinearLayout>

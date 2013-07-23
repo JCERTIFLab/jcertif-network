@@ -1,4 +1,4 @@
-jcertif-network
+JCertif Network
 ===============
 
   Depuis sa création, notre communauté « JCertif » ne cesse de se développer et ses membres ont été multipliés 

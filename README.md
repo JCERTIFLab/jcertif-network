@@ -21,7 +21,8 @@ de "JCertif network" on trouve :
   L'authentification des paramètres d'administrateur sont: "root" (login) et "root" (mot de passe).
 
   L’URL du web service utilisé dans le projet Android est celui qui est hébergé dans un serveur gratuit. Vous pouvez 
-le changer par votre web service stocké en local (pour tester l’application en toute liberté).
+le changer par votre web service stocké en local (pour tester l’application en toute liberté). N'apportez pas des modifications 
+sur les infrmations stockées dans le serveur.
 
   Vous êtes invités à essayer l’application et à apporter votre contribution afin d’enrichir notre application 
 et la rendre plus active car ça nous permettra de renforcer nos liens et être à jour par rapport aux nouveautés 

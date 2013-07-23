@@ -31,6 +31,6 @@ de notre communauté.
   
 ![Menus principale](https://github.com/JCERTIFLab/jcertif-network/blob/master/images/Screenshot%201.png?raw=true)
 
-![Liste des rubriques](https://github.com/JCERTIFLab/jcertif-network/blob/master/images/Screenshot%203.png)
+![Liste des rubriques](https://github.com/JCERTIFLab/jcertif-network/blob/master/images/Screenshot%203.png?raw=true)
 
-![Liste des évènements](https://github.com/JCERTIFLab/jcertif-network/blob/master/images/Screenshot%202.png)
+![Liste des évènements](https://github.com/JCERTIFLab/jcertif-network/blob/master/images/Screenshot%202.png?raw=true)
